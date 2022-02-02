@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica formularios</title>
+    <style>
+        body {
+            background-color: green;
+            color: red;
+        }
+        label, h1, p {
+            color: yellow;
+        }
+
+        label[for]{
+            color:aqua;
+        }
+
+        .demo-link:hover {
+            color:hotpink;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <a class="demo-link" href="#">Voy a ir a la misma página</a> <br><br><br>
+    <p>LLENALO CORRECTAMENTE</p>
+    <form action="" method="post">
+        <label for="nombre">Ingresa tu nombre</label>
+        <input type="text" name="nombre" id="nombre"> <br>
+
+        <label for="apellido">Ingresa tu apellido</label>
+        <input type="text" name="apellido" id="apellido"> <br>
+
+        <label for="email">Ingresa tu email</label>
+        <input type="email" name="email" id="email"> <br>
+
+        <label for="edad">Ingresa tu edad</label>
+        <input type="number" name="edad" id="edad"> <br>
+
+        <label for="Genero">Ingresa tu genero</label> <br>
+        <input type="radio" id="Masculino" name="Genero" value="Masculino">
+        <label for="Masculino">Masculino</label><br>
+        <input type="radio" id="Femenino" name="Genero" value="Femenino">
+        <label for="Femenino">Femenino</label><br>
+        <input type="radio" id="Otros" name="Genero" value="Otros">
+        <label for="Otros">Otros</label><br>
+        <input type="radio" id="No especificar" name="Genero" value="No especificar">
+        <label for="No especificar">No especificar</label><br>
+
+        <label for="pwd">Contraseña:</label>
+        <input type="password" id="pwd" name="pwd"> <br>
+
+        <label for="Select">Selecciona la opcion que más te guste:</label>
+        <select name="Modulo actual" id="Modulo actual">
+            <option value="Seleccione">Seleccione</option>
+            <option value="Spider-man">Spider-man</option>
+            <option value="Flash">Flash</option>
+            <option value="Thor">Thor</option>
+        </select>
+
+        <br> <label for="favcolor">Elige tu color favorito:</label>
+        <input type="color" id="favcolor" name="favcolor" value="#ff0000"> <br>
+
+        <input type="checkbox" id="Datos" name="Datos" value="datos">
+        <label for="Datos">Acepto compartir datos</label><br>
+
+        <input type="checkbox" id="onda" name="onda" value="Onda">
+        <label for="onda">Le agarre la onda</label><br>
+
+        <input type="submit">
+    </form>
+</body>
+</html>
+
+<!--Un formulario que incluya:
+Nombre
+Apellido
+Email
+Edad
+Genero (radio buttons)
+Contraseña
+Modulo actual (Select con al menos 3 opciones)
+Color favorito
+Checkbox donde aceptan compartir datos
+Checkbox donde aceptan que le agarraron la onda :cool-doge:
+Obviamente su boton submit-->
